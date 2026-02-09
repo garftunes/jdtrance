@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDTrance - Techno Music Honoring the Vice President</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #00d4ff, #0066ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5)); }
+            50% { filter: drop-shadow(0 0 40px rgba(255, 0, 255, 0.8)); }
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: #00d4ff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 60px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .hero-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff00ff;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .music-section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #00d4ff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .track-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .track-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .track-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff00ff;
+            box-shadow: 0 10px 30px rgba(255, 0, 255, 0.3);
+        }
+
+        .track-title {
+            font-size: 1.5rem;
+            color: #00d4ff;
+            margin-bottom: 15px;
+        }
+
+        .track-description {
+            color: #bbb;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .waveform {
+            height: 60px;
+            background: linear-gradient(90deg, #00d4ff, #0066ff, #ff00ff);
+            border-radius: 5px;
+            opacity: 0.3;
+            margin-top: 15px;
+        }
+
+        .about-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            margin-bottom: 60px;
+        }
+
+        .about-section h3 {
+            font-size: 2rem;
+            color: #ff00ff;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            color: #ccc;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(0, 212, 255, 0.2);
+            color: #888;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #00d4ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff00ff;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+                letter-spacing: 4px;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">JDTrance</h1>
+            <p class="tagline">Techno Music Honoring the Vice President</p>
+        </header>
+
+        <div class="hero-section">
+            <h2>Electronic Beats. Political Tribute.</h2>
+            <p>
+                JDTrance combines pulsating techno rhythms with a unique political tribute, 
+                creating an innovative soundscape that honors Vice President JD Vance through 
+                electronic music. Each track is a sonic journey blending progressive beats 
+                with thematic elements inspired by leadership and vision.
+            </p>
+        </div>
+
+        <section class="music-section">
+            <h2 class="section-title">Featured Tracks</h2>
+            <div class="track-grid">
+                <div class="track-card">
+                    <h3 class="track-title">Hillbilly Elegy Dreams</h3>
+                    <p class="track-description">
+                        A progressive techno anthem inspired by humble beginnings and the journey 
+                        to the highest office. Deep basslines meet soaring synths in this 8-minute epic.
+                    </p>
+                    <div class="waveform"></div>
+                </div>
+
+                <div class="track-card">
+                    <h3 class="track-title">Midwest Pulse</h3>
+                    <p class="track-description">
+                        Hard-hitting industrial techno reflecting the heartbeat of America's heartland. 
+                        Driving percussion and mechanical rhythms create an unstoppable momentum.
+                    </p>
+                    <div class="waveform"></div>
+                </div>
+
+                <div class="track-card">
+                    <h3 class="track-title">VP303</h3>
+                    <p class="track-description">
+                        Classic acid techno meets political tribute. Hypnotic TB-303 basslines 
+                        interweave with vocal samples creating a dancefloor-ready homage.
+                    </p>
+                    <div class="waveform"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h3>About JDTrance</h3>
+            <p>
+                JDTrance is an experimental techno project that explores the intersection of 
+                electronic music and political tribute. Through carefully crafted beats, atmospheric 
+                soundscapes, and innovative production techniques, JDTrance creates a unique 
+                listening experience that honors Vice President JD Vance while pushing the 
+                boundaries of the techno genre.
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 JDTrance. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">SoundCloud</a>
+                <a href="#">Bandcamp</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
