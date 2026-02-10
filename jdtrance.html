@@ -180,6 +180,21 @@
             color: #ff00ff;
         }
 
+        .logo-anchor {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .logo-anchor img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .logo {
                 font-size: 2.5rem;
@@ -193,10 +208,18 @@
             .section-title {
                 font-size: 1.8rem;
             }
+
+            .logo-anchor {
+                width: 120px;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="logo-anchor">
+        <img src="jdtrance_logo_tall_mono.png" alt="JDTrance Logo">
+    </div>
+    
     <div class="container">
         <header>
             <h1 class="logo">JDTrance</h1>
@@ -216,6 +239,34 @@
         <section class="music-section">
             <h2 class="section-title">Featured Tracks</h2>
             <div class="track-grid">
+                <div class="track-card">
+                    <h3 class="track-title">Hillbilly Elegy Dreams</h3>
+                    <p class="track-description">
+                        A progressive techno anthem inspired by humble beginnings and the journey 
+                        to the highest office. Deep basslines meet soaring synths in this 8-minute epic.
+                    </p>
+                    <div class="waveform"></div>
+                </div>
+
+                <div class="track-card">
+                    <h3 class="track-title">Midwest Pulse</h3>
+                    <p class="track-description">
+                        Hard-hitting industrial techno reflecting the heartbeat of America's heartland. 
+                        Driving percussion and mechanical rhythms create an unstoppable momentum.
+                    </p>
+                    <div class="waveform"></div>
+                </div>
+
+                <div class="track-card">
+                    <h3 class="track-title">VP303</h3>
+                    <p class="track-description">
+                        Classic acid techno meets political tribute. Hypnotic TB-303 basslines 
+                        interweave with vocal samples creating a dancefloor-ready homage.
+                    </p>
+                    <div class="waveform"></div>
+                </div>
+            </div>
+                        <div class="track-grid">
                 <div class="track-card">
                     <h3 class="track-title">Hillbilly Elegy Dreams</h3>
                     <p class="track-description">
