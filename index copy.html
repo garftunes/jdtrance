@@ -100,6 +100,15 @@
             margin-bottom: 60px;
         }
 
+        .track-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
         .track-card:hover {
             transform: translateY(-5px);
             border-color: #ff00ff;
@@ -186,62 +195,6 @@
             display: block;
         }
 
-        .lyrics-panel {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 400px;
-            max-height: 80vh;
-            background: rgba(10, 14, 39, 0.95);
-            border: 2px solid #00d4ff;
-            border-radius: 15px;
-            padding: 30px;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            z-index: 999;
-            overflow-y: auto;
-            backdrop-filter: blur(20px);
-            box-shadow: 0 0 40px rgba(0, 212, 255, 0.4);
-        }
-
-        .lyrics-panel.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .lyrics-panel img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(0, 212, 255, 0.3);
-        }
-
-        .lyrics-panel h3 {
-            color: #ff00ff;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .lyrics-panel .lyrics-content {
-            color: #ccc;
-            line-height: 1.8;
-            font-size: 0.95rem;
-            white-space: pre-line;
-        }
-
-        .track-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(0, 212, 255, 0.3);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-            cursor: pointer;
-        }
-
         @media (max-width: 768px) {
             .logo {
                 font-size: 2.5rem;
@@ -259,138 +212,91 @@
             .logo-anchor {
                 width: 120px;
             }
-
-            .lyrics-panel {
-                width: 90%;
-                right: 5%;
-                left: 5%;
-                max-height: 70vh;
-            }
         }
     </style>
 </head>
 <body>
     <div class="logo-anchor">
-        <img src="jdtrance_logo_tall_mono.png" alt="JDTrance Logo">
+        <img src="jdtrance logo tall mono.png" alt="JD Trance Logo">
     </div>
     
     <div class="container">
         <header>
-            <h1 class="logo">JDTrance</h1>
-            <p class="tagline">Techno Music Honoring the Vice President</p>
+            <h1 class="logo">JD Trance</h1>
+            <p class="tagline">Come for the chill; stay for the ill</p>
         </header>
 
         <div class="hero-section">
-            <h2>Electronic Beats. Political Tribute.</h2>
+            <h2>JD Trance is the alter ego of Jayzen</h2>
             <p>
-                JDTrance combines pulsating techno rhythms with a unique political tribute, 
-                creating an innovative soundscape that honors Vice President JD Vance through 
+                JD Trance combines pulsating techno rhythms with a unique political introspection, 
+                creating an innovative soundscape that holds our elected officials more accountable through 
                 electronic music. Each track is a sonic journey blending progressive beats 
-                with thematic elements inspired by leadership and vision.
+                with thematic elements inspired by a cronic lapse in leadership.
             </p>
         </div>
 
         <section class="music-section">
             <h2 class="section-title">Featured Tracks</h2>
             <div class="track-grid">
-                <div class="track-card" 
-                     data-track="hillbilly"
-                     data-title="Hillbilly Elegy Dreams"
-                     data-image="track1.jpg"
-                     data-lyrics="[Verse 1]
-From the hills to the heights
-Electric dreams in neon nights
-Rising through the bass and beat
-Stories told in 4/4 heat
-
-[Chorus]
-Dreams ascending, lights transcending
-Techno pulse, no pretending
-From the ground to the sky
-On these beats we fly
-
-[Verse 2]
-Synthetic strings and analog soul
-Progressive rhythms make us whole
-Through the darkness, find the light
-Dancing till the morning bright
-
-[Drop]
-(Instrumental techno break)">
-                    <h3 class="track-title">Hillbilly Elegy Dreams</h3>
+                <div class="track-card">
+                    <h3 class="track-title">Hillbilly Effigy</h3>
                     <p class="track-description">
                         A progressive techno anthem inspired by humble beginnings and the journey 
                         to the highest office. Deep basslines meet soaring synths in this 8-minute epic.
                     </p>
+                    <audio controls><source src="media/Hillbilly Effigy.mp3" type="audio/mpeg"></audio>
                     <div class="waveform"></div>
                 </div>
 
-                <div class="track-card"
-                     data-track="midwest"
-                     data-title="Midwest Pulse"
-                     data-image="track2.jpg"
-                     data-lyrics="[Intro]
-Heartland thunder, industrial sound
-Mechanical rhythm, steel unbound
-
-[Verse 1]
-Factory floors and futures bright
-Driving force through endless night
-Pounding drums like hammer falls
-Echo through these concrete walls
-
-[Chorus]
-Pulse of power, never surrender
-Midwest thunder, pure and tender
-Steel resolve in every beat
-Moving forward, no retreat
-
-[Bridge]
-(Heavy percussion breakdown)
-
-[Outro]
-From the heartland, strength remains
-Techno coursing through our veins">
-                    <h3 class="track-title">Midwest Pulse</h3>
+                <div class="track-card">
+                    <h3 class="track-title">Ice Queen</h3>
                     <p class="track-description">
                         Hard-hitting industrial techno reflecting the heartbeat of America's heartland. 
                         Driving percussion and mechanical rhythms create an unstoppable momentum.
                     </p>
+                    <audio controls><source src="media/ICE Queen.mp3" type="audio/mpeg"></audio>
                     <div class="waveform"></div>
                 </div>
 
-                <div class="track-card"
-                     data-track="vp303"
-                     data-title="VP303"
-                     data-image="track3.jpg"
-                     data-lyrics="[Acid Line]
-(TB-303 bassline sequence)
-
-[Verse 1]
-Acid memories, silver dreams
-Leadership in laser beams
-303 sequences unfold
-Stories of the brave and bold
-
-[Chorus]
-VP standing tall and true
-Acid lines in red white blue
-Hypnotic grooves, the future's here
-Bass so deep, the vision clear
-
-[Break]
-(Squelchy 303 solo)
-
-[Verse 2]
-From the Senate to the sound
-Where the rhythm can be found
-Political and personal blend
-In this acid techno end">
-                    <h3 class="track-title">VP303</h3>
+                <div class="track-card">
+                    <h3 class="track-title">The Golden Grift</h3>
                     <p class="track-description">
                         Classic acid techno meets political tribute. Hypnotic TB-303 basslines 
                         interweave with vocal samples creating a dancefloor-ready homage.
                     </p>
+                    <audio controls><source src="media/The Golden Grift.mp3" type="audio/mpeg"></audio>
+                    <div class="waveform"></div>
+                </div>
+            </div>
+                        <div class="track-grid">
+                <div class="track-card">
+                    <h3 class="track-title">Bird in the Machine</h3>
+                    <p class="track-description">
+                        A progressive techno anthem inspired by humble beginnings and the journey 
+                        to the highest office. Deep basslines meet soaring synths in this 8-minute epic.
+                    </p>
+                    <audio controls><source src="media/Bird in the Machine.mp3" type="audio/mpeg"></audio>
+                    <div class="waveform"></div>
+                </div>
+
+                <div class="track-card">
+                    <h3 class="track-title">Snake in the Grass</h3>
+                    <p class="track-description">
+                        Hard-hitting industrial techno reflecting the heartbeat of America's heartland. 
+                        Driving percussion and mechanical rhythms create an unstoppable momentum.
+                    </p>
+                    <audio controls><source src="media/Snake in the Grass.mp3" type="audio/mpeg"></audio>
+                    <div class="waveform"></div>
+                </div>
+
+                <div class="track-card">
+                    <h3 class="track-title">The Ballad of the Shifting Son</h3>
+                    <p class="track-description">
+                        Classic acid techno meets political tribute. Hypnotic TB-303 basslines 
+                        interweave with vocal samples creating a dancefloor-ready homage.
+                    </p>
+                    <audio controls><source src="media/The Ballad of the Shifting Son.mp3" type="audio/mpeg"></audio>
                     <div class="waveform"></div>
                 </div>
             </div>
@@ -417,42 +323,5 @@ In this acid techno end">
             </div>
         </footer>
     </div>
-
-    <!-- Lyrics Panel -->
-    <div class="lyrics-panel" id="lyricsPanel">
-        <img id="trackImage" src="" alt="Track artwork">
-        <h3 id="trackTitle"></h3>
-        <div class="lyrics-content" id="lyricsContent"></div>
-    </div>
-
-    <script>
-        const trackCards = document.querySelectorAll('.track-card');
-        const lyricsPanel = document.getElementById('lyricsPanel');
-        const trackImage = document.getElementById('trackImage');
-        const trackTitle = document.getElementById('trackTitle');
-        const lyricsContent = document.getElementById('lyricsContent');
-
-        trackCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                const title = this.dataset.title;
-                const image = this.dataset.image;
-                const lyrics = this.dataset.lyrics;
-
-                trackTitle.textContent = title;
-                trackImage.src = image;
-                trackImage.alt = title + ' artwork';
-                lyricsContent.textContent = lyrics;
-
-                lyricsPanel.classList.add('active');
-            });
-        });
-
-        // Optional: Hide panel when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.track-card') && !e.target.closest('.lyrics-panel')) {
-                lyricsPanel.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>
